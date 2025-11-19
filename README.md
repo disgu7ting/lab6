@@ -1,5 +1,9 @@
 # Лабораторная работа №6  
 ## Асинхронный JavaScript: API и хранилище
+<img width="1101" height="449" alt="image" src="https://github.com/user-attachments/assets/e4e63a25-f0a0-45d5-a7e3-3304cc18229b" />
+<img width="1087" height="337" alt="image" src="https://github.com/user-attachments/assets/bc63daad-a92e-4206-90f4-2c6071705678" />
+<img width="1091" height="916" alt="image" src="https://github.com/user-attachments/assets/666080cc-c6f3-4138-b754-4ee5ebcb21b1" />
+<img width="2147" height="1160" alt="image" src="https://github.com/user-attachments/assets/dc068516-2647-4b95-858d-7758286ab9fa" />
 
 
 
@@ -24,3 +28,4 @@
 - Код получения цитат через fetch + async/await  
 - Код загрузки изображений   
 - Вручную пришлось адаптировать стили, подключить скрипты и интегрировать в верстку.
+
