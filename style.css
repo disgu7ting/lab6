@@ -1,0 +1,275 @@
+/* Общий стиль */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: #fcf8f1;
+  color: #5b4636;
+}
+
+/* Карточки как в ЛР5 */
+.card {
+  background: #fffdfa;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+/* =======================================
+   ТЁМНАЯ ТЕМА
+======================================= */
+body.dark {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+/* HEADER */
+body.dark header {
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+}
+
+/* NAV */
+body.dark nav {
+  background-color: #2b2b2b;
+}
+
+body.dark nav a {
+  color: #e0e0e0;
+}
+
+/* Карточки и сайдбар */
+body.dark .card,
+body.dark .sidebar {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+/* АККОРДЕОН */
+body.dark .accordion-title {
+  background: #3a3a3a;
+  color: #f0f0f0;
+}
+
+body.dark .accordion-content {
+  background: #2c2c2c;
+  color: #f0f0f0;
+}
+
+/* Кнопки */
+body.dark .btn {
+  background: #555;
+  color: #fff;
+}
+
+body.dark .btn:hover {
+  background: #777;
+}
+
+/* ГАЛЕРЕЯ */
+body.dark .gallery img,
+body.dark .images-grid img {
+  filter: brightness(0.8);
+}
+
+/* ОТЗЫВЫ */
+body.dark .review-box {
+  background: #2c2c2c;
+  color: #f0f0f0;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* МОДАЛКА */
+body.dark .modal-content {
+  filter: brightness(0.9);
+}
+
+/* КНОПКА НАВЕРХ */
+body.dark .scroll-btn {
+  background: #555;
+}
+
+/* НЕБОТАРИАНТ */
+body.dark .api-gallery {
+  background: #2c2c2c;
+  color: #f0f0f0;
+}
+
+
+header {
+  background: #f7ecdf;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Кнопки */
+.btn {
+  padding: 10px 18px;
+  background: #a68463;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: #8b6b4f;
+  transform: translateY(-2px);
+}
+
+.btn.small {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.btn.wide {
+  width: 100%;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Навигация */
+nav {
+  background: #efe2d1;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5b4636;
+  font-weight: bold;
+}
+
+/* Разметка */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 1100px;
+  margin: 25px auto;
+  gap: 25px;
+}
+
+.sidebar {
+  background: #f5e9dc;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* АККОРДЕОН */
+.accordion-title {
+  cursor: pointer;
+  padding: 12px;
+  background: #e9dbca;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.accordion-content {
+  display: none;
+  background: #fffdfa;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+/* ГАЛЕРЕЯ */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.04);
+}
+
+/* API галерея */
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.images-grid img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Отзывы */
+.review-box {
+  padding: 15px;
+  border-radius: 10px;
+  background: #f9f2e9;
+  margin-bottom: 15px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Модалка */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+}
+
+.modal-content {
+  display: block;
+  margin: 100px auto;
+  max-width: 80%;
+  border-radius: 16px;
+}
+
+.close {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Наверх */
+.scroll-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #a68463;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог Дарьи Шутиковой — ЛР6</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Блог Дарьи Шутиковой</h1>
+  <p>Готовка, творчество и вдохновение</p>
+
+  <button id="themeToggle" class="btn small">🌙 Тема</button>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Рецепты</a></li>
+    <li><a href="#">Творчество</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <main>
+
+    <article class="card">
+      <h2>Мой любимый рецепт</h2>
+      <p>Я приготовила нежный шоколадный торт — быстро, просто и очень вкусно!</p>
+    </article>
+
+    <article class="card">
+      <h2>Творческая идея</h2>
+      <p>Недавно попробовала рисовать акварелью — удивительно расслабляет.</p>
+    </article>
+
+    <!-- Аккордеон -->
+    <section class="accordion">
+      <div class="accordion-item">
+        <h3 class="accordion-title">Мой любимый десерт</h3>
+        <div class="accordion-content">
+          Шоколадный мусс с вишней — идеальный баланс сладкого и кислого.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-title">Любимое время года</h3>
+        <div class="accordion-content">
+          Осень — уют, кофе, тёплые пледы и спокойствие.
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery-section card">
+      <h2>Галерея</h2>
+
+      <div class="filters">
+        <button class="btn filter" data-category="all">Все</button>
+        <button class="btn filter" data-category="food">Еда</button>
+        <button class="btn filter" data-category="art">Творчество</button>
+      </div>
+
+      <div class="gallery">
+        <img src="1.jpg" data-category="food">
+        <img src="2.jpg" data-category="food">
+        <img src="3.jpg" data-category="art">
+        <img src="4.jpg" data-category="art">
+        <img src="5.jpg" data-category="food">
+        <img src="6.jpg" data-category="art">
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="card reviews">
+      <h2>Отзывы</h2>
+
+      <div id="reviews" class="review-box">Загрузка...</div>
+
+      <button id="newReviewsBtn" class="btn wide">Обновить отзывы</button>
+    </section>
+
+    <!-- API галерея -->
+    <section class="card api-gallery">
+      <h2>Галерея из API</h2>
+
+      <div id="images" class="images-grid">Загрузка...</div>
+
+      <button id="loadImagesBtn" class="btn wide">Загрузить новые</button>
+    </section>
+
+  </main>
+
+  <aside class="sidebar">
+    <h3>Обо мне</h3>
+    <p>Привет! Я Дарья, люблю готовить и делиться идеями.</p>
+
+    <h3>Популярное</h3>
+    <ul>
+      <li>Рецепты</li>
+      <li>Творчество</li>
+      <li>Путешествия</li>
+    </ul>
+  </aside>
+
+</div>
+
+<!-- Модалка -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<button id="scrollTopBtn" class="scroll-btn">↑</button>
+
+<footer>
+  <p>© 2025 Дарья Шутикова</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
